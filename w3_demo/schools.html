@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Andrew Johnson">
+    <meta name="description" content="W3 Demo">
+
+    <title>W3D1 | Demo</title>
+
+    <!--IN DOCUMENT STYLING BELOW-->
+    <style>
+        div {
+            padding:10px;
+            margin:5px;
+            border:1px solid black;
+        }
+
+        #wrapper {
+            background-color:lightgray;
+        }
+
+        .bg {
+            background-color:black;
+            color:white;
+        }
+
+        .border {
+            border:2px solid red;
+
+        }
+    </style>
+</head>
+<body>
+    <!--Body holds actual page content-->
+
+
+    <!--Wrapper holds all content-->
+    <div id="wrapper">
+
+        <!--HEADER-->
+        <div id="header" class="fancy bg border">
+
+            <h1 id="title" class="fancy">Joel Miller</h1>
+            <h2 id="subtitle" class="fancy">The hero & heart throp of HBO's The Last of Us</h2>
+
+        </div><!--/ #header-->
+
+
+        <!--NAV-->
+        <div id="nav">
+            
+            <!--internal PAGE links: Links to pages within the site-->
+            <a href="index.html">| HOME |</a>
+            <a href="schools.html">| SCHOOLS |</a>
+            <a href="hobbies.html">| HOBBIES |</a>
+
+            <br><br>
+            <!--internal JUMP links: leads to a section of the current page-->
+            <a href="#footer">To Bottom Of Page</a>
+
+            <br><br>
+
+            <a href="schools.html#footer">To Bottom of SCHOOLS Page</a>
+
+            <br>
+            <a href="hobbies.html#footer">To Bottom of HOBBIES Page</a>
+
+            <br><br>
+            <!--external link: Links to a page outside of your website-->
+            <a href="https://www.hbo.com/the-last-of-us" target="_blank">HBO Official Site</a>
+
+            <br>
+        </div><!--/ #nav-->
+
+        <!--CONTENT-->
+        <div id="content">
+
+            <h2 class="fancy border">My Schools</h2>
+
+        </div><!--/ #content-->
+
+
+        <!--FOOTER-->
+        <div id="footer" class="border bg">
+
+            <p>&copy;A JOHNSON | SE111 | 202420</p>
+
+
+            <!--edit src at end of work session!-->
+            <img src="" alt="validation screenshot for HOME page" width="100%">
+
+        </div><!--/ #footer-->
+
+    </div>
+
+</body>
+</html>
