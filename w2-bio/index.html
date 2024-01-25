@@ -10,21 +10,10 @@
 
     <style>
 
-        #wrapper {
-
-            margin-right: auto;
-            margin-left: auto;
-            max-width: 1160px;
-            padding-top: 10px;
-            padding-right: 20px;
-            padding-left: 20px;
-            padding-bottom: 10px;
-
-        }
-
         .shifted {
 
             margin-left:30px;
+
         }
 
         .centered {
@@ -35,45 +24,101 @@
 
         .font {
 
+            color:black;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
         }
 
+        div {
+
+            padding: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin:0px;
+
+        }
+
+        /* # is for ID's | . is for CLASSES */
+        #wrapper {
+
+            margin-top: -8px;
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: azure;
+            border: 2px solid black;
+
+        }
+
+        /* # is for ID's | . is for CLASSES */
+        .bg {
+
+            background-color:gray;
+            color:gray;
+
+        }
+
+        /* # is for ID's | . is for CLASSES */
+        .border {
+
+            padding: 30px;
+            margin: 40px;
+            border: 2px solid black;
+
+        }
+
+        #footer {
+
+            font-size: small;
+
+        }
+
+        
+
     </style>
 </head>
-<body>
+<body class="bg">
     
     <div id="wrapper">
 
         <main>
 
-            <div id="header" class="centered font">
+            <div id="header" class="centered font border">
 
                 <h1>Andrew Johnson - About Me</h1>
 
             </div><!--/#header-->
 
-            <div id="nav" class="centered font">
-
-                <hr>
+            <div id="nav" class="centered font border">
 
                 <a href="">Bio</a>
                 <a href="">Schooling</a>
                 <a href="">Hobbies</a>
                 <a href="">Footer</a>
 
-                <hr>
-
             </div>
 
+            <hr>
+
             <!--Section for BIO-->
-            <div id="bio" class="shifted font">
+            <div id="content" class="shifted font border">
 
                 <h3><p>I'm from Franklin, MA and Graduated from Tri-County RVTHS from the Computer Information Systems program. A few of my hobbies include: Exercising, snowboarding, longboarding and video games. I've taken a few courses on HTML during HS and was able to use my notes to catch up on a few things I had trouble understanding. For the past 2 years, I've worked as a Level II IT Technician through an internship program at my high school which helped me figure out what I really wanted to do for my career. Currently, my career focus is to work as a network or cloud engineer as networking has always been my passion.</p></h3>
 
             </div>
 
+            <hr>
+
+            <div id="footer" class="border">
+
+                <p>&copy;A JOHNSON | SE111 | 202420</p>
+
+            </div>
+
         </main>
+
+
 
     </div>
     
