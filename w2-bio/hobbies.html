@@ -3,9 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="W2 Bio Page">
+    <meta name="author" content="Andrew Johnson">
+    
+    <title>Johnson | Hobbies Page</title>
+
+    <style>
+
+        .shifted {
+
+            margin-left:30px;
+
+        }
+
+        .centered {
+
+            text-align: center;
+
+        }
+
+        .font {
+
+            color:black;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        div {
+
+            padding: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin:0px;
+
+        }
+
+        /* # is for ID's | . is for CLASSES */
+        #wrapper {
+
+            margin-top: -8px;
+            margin: 10px;
+            margin-left: 60px;
+            margin-right: 60px;
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color: azure;
+            border: 5px solid black;
+
+        }
+
+        /* # is for ID's | . is for CLASSES */
+        .bg {
+
+            background-color:rebeccapurple;
+            color:rebeccapurple;
+
+        }
+
+        /* # is for ID's | . is for CLASSES */
+        .border {
+
+            padding: 40px;
+            margin: 40px;
+            border: 2px solid black;
+
+        }
+
+        #footer {
+
+            font-size: small;
+
+        }
+
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .dropshadowimg  { 
+            
+            width:200px;
+            box-shadow: 5px 5px 5px #999; 
+        
+        }
+
+        
+
+    </style>
 </head>
-<body>
+<body class="bg">
+    
+    <div id="wrapper">
+
+        <main>
+
+            <div id="header" class="centered font border">
+
+                <h1>Andrew Johnson - About Me</h1>
+
+            </div><!--/#header-->
+
+            <div id="nav" class="centered font border">
+
+                <a href="index.html">Bio</a>
+                <a href="schools.html">Schooling</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="#footer">Footer</a>
+
+            </div>
+
+            <hr>
+
+            <!--Section for BIO-->
+            <div id="content" class="shifted font border">
+
+                
+
+                <img class="center dropshadowimg" src="images/luna.png" width="400" length="500" style="stroke: black;" alt="My Dog Luna :]">
+
+            </div>
+
+            <hr>
+
+            <div id="footer" class="border">
+
+                <p>&copy;A JOHNSON | SE111 | 202420</p>
+                <a href="#header">Back to Top</a>
+
+            </div>
+
+        </main>
+
+
+
+    </div>
     
 </body>
 </html>

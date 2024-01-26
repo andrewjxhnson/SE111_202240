@@ -31,7 +31,7 @@
 
         div {
 
-            padding: 20px;
+            padding: 30px;
             padding-left: 20px;
             padding-right: 20px;
             margin:0px;
@@ -42,27 +42,28 @@
         #wrapper {
 
             margin-top: -8px;
+            margin: 10px;
             margin-left: 60px;
             margin-right: 60px;
             padding-left: 20px;
             padding-right: 20px;
             background-color: azure;
-            border: 2px solid black;
+            border: 5px solid black;
 
         }
 
         /* # is for ID's | . is for CLASSES */
         .bg {
 
-            background-color:gray;
-            color:gray;
+            background-color:rebeccapurple;
+            color:rebeccapurple;
 
         }
 
         /* # is for ID's | . is for CLASSES */
         .border {
 
-            padding: 30px;
+            padding: 40px;
             margin: 40px;
             border: 2px solid black;
 
@@ -72,6 +73,22 @@
 
             font-size: small;
 
+        }
+
+        .center {
+
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+
+        }
+
+        .dropshadowimg  { 
+            
+            width:200px;
+            box-shadow: 5px 5px 5px #999; 
+        
         }
 
         
@@ -92,10 +109,10 @@
 
             <div id="nav" class="centered font border">
 
-                <a href="">Bio</a>
-                <a href="">Schooling</a>
-                <a href="">Hobbies</a>
-                <a href="">Footer</a>
+                <a href="index.html">Bio</a>
+                <a href="schools.html">Schooling</a>
+                <a href="hobbies.html">Hobbies</a>
+                <a href="#footer">Footer</a>
 
             </div>
 
@@ -103,8 +120,12 @@
 
             <!--Section for BIO-->
             <div id="content" class="shifted font border">
+                
+                <h3>Bio</h3>
 
                 <h3><p>I'm from Franklin, MA and Graduated from Tri-County RVTHS from the Computer Information Systems program. A few of my hobbies include: Exercising, snowboarding, longboarding and video games. I've taken a few courses on HTML during HS and was able to use my notes to catch up on a few things I had trouble understanding. For the past 2 years, I've worked as a Level II IT Technician through an internship program at my high school which helped me figure out what I really wanted to do for my career. Currently, my career focus is to work as a network or cloud engineer as networking has always been my passion.</p></h3>
+
+                <img class="center dropshadowimg" src="images/luna.png" width="400" length="500" style="stroke: black;" alt="My Dog Luna :]">
 
             </div>
 
@@ -113,6 +134,7 @@
             <div id="footer" class="border">
 
                 <p>&copy;A JOHNSON | SE111 | 202420</p>
+                <a href="#header">Back to Top</a>
 
             </div>
 
