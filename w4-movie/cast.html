@@ -4,17 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="K TRUCHON">
-    <meta name="description" content="W4 Demo - INDEX">
+    <meta name="description" content="W4 Demo - CAST">
 
-    <title>Destiny 2</title>
+    <title>🎞 W4 | Demo</title>
 
     <!--in-document styling-->
     <style>
-       /*write CSS in here*/
+        /*write CSS in here*/
 
-       body {
+        body {
 
-            background-image: url("images/lightfall.png");
+         background-image: url("images/bgs/records.jpg");
 
         }
 
@@ -149,32 +149,32 @@
         }
 
         .special-img {
-
             width:100%;
-            
         }
 
+        img:hover {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
     </style>
 </head>
 <body>
     <!--wrapper / container holds all content-->
-
     <div id="container">
         <hr>
         <!--HEADER-->
         <div id="header">
 
-            <h1><em>Destiny 2</em></h1>
-            <h3>Become Legend</h3>
+            <h1><em>Empire Records</em></h1>
+            <h3>Damn the man, SAVE THE EMPIRE!</h3>
 
         </div><!--/ #header-->
         <!--NAV-->
         <div id="nav">
-            
+
             <div id="buttons"><!--added to center buttons in nav-->
 
                 <!--internal page links: RELATIVE PATHS-->
-                <!--classes added by KT for styling-->
                 <a class="link" href="index.html">HOME</a>
                 <a class="link" href="cast.html">CAST</a>
                 <a class="link" href="review.html">REVIEW</a>
@@ -182,28 +182,37 @@
 
         </div><!--/ #nav-->
 
-        <!--added by KT for styling-->
-        <img src="images/d2.png" class="special-img" alt="Destiny 2 launch poster" id="poster">
-
         <hr>
         <!--PAGECONTENT-->
         <div id="content">
 
-            <h2>ABOUT the game <br> <em>Destiny 2</em></h2>
+            <h2>CAST of the movie <br> <em>Empire Records</em> (1995)</h2>
 
-            <p>A <i>brief</i> synopsis (1-2 sentences) on the <em>movie</em>.</p>
+            <!--reusable container for EACH character-->
+            <div class="character">
 
-            <!--relative image of movie poster-->
-            <img src="images/poster.jpg" alt="the official movie poster of Empire Records (1995)" width="500" title="Damn the Man, SAVE THE EMPIRE!">
+                <h3>Corey</h3>
 
-            <div class="info">
+                <img src="images/liv.jpg" alt="Liv Tyler head shot" height="50">
 
-                <!--company + movie "credits" go-->
-                <p><b>Production Company:</b> Regency Enterprises</p>
+                <p>Liv Tyler</p>
 
-            </div><!--/ .info-->
+                <hr>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/bxsb4iBOG_M?si=5S0zCP7Tb6dZiQtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+            </div><!--/ .character-->
+
+            <!--reusable container for EACH character-->
+            <div class="character">
+
+                <h3>Gina</h3>
+
+                <img src="images/renee.jpg" alt="Renee Zellweger head shot" height="50">
+
+                <p>Renée Zellweger</p>
+
+                <hr>
+
+            </div><!--/ .character-->
 
         </div><!--/ #content-->
 
@@ -218,7 +227,7 @@
 
             <!--IMAGE OF VALIDATION - for EACH page!-->
 
-            <img src="images/validation/index.png" alt="validation of INDEX page" style="width:100%">
+            <img src="images/validation/cast.png" alt="validatin of INDEX page" style="width:100%">
 
 
         </div><!--/ #footer-->
