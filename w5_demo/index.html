@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Johnson">
+    <meta name="description" content="w5 demo">
+
+
+    <title>W5 | Demo</title>
+
+    <style>
+
+        table, td {
+
+            /*style to show border on table*/
+            border:1px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Form with a Table</h1>
+
+    <!--when working w tables and forms, put the table INSIDE of the form-->
+    <!--work row-by-row and have a plan before starting your code!-->
+
+    <form method="GET" action="">
+
+        <table>
+
+            <!--TABLE HEAD-->
+            <thead>
+                <!--COLUMN HEADERS - must use <b> OR <h#> if you want them to be bold-->
+
+
+                <!--table row: one row of data, populated with <td></td>-->
+                <!--MAKE SURE THAT EVERY ROW HAS THE SAME AMOUNT OF DATA (<td>)-->
+
+                <!--NEW ROW COPY-->
+                <tr>
+
+                    <!--LABEL-->
+                    <!--make sure the for matches inputs id & name (almost always)-->
+                    <td>
+
+                        <h2>Label</h2>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <h2>Input</h2>
+
+                    </td>
+
+                </tr>
+                <!--END NEW ROW COPY-->
+
+
+            </thead>
+
+            <!--TABLE BODY-->
+            <tbody>
+                
+                <tr>
+
+                    <!--LABEL-->
+                    <!--make sure the for matches inputs id & name (almost always)-->
+                    <td>
+
+                        <label for="fName">First Name: </label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                        <input type="text" name="fName" id="fName" placeholder="Enter First Name" maxlength="10" required>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--make sure the for matches inputs id & name (almost always)-->
+                    <td>
+
+                        <label for="lName">Last Name: </label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <input type="text" name="lName" id="lName" placeholder="Enter Last Name" maxlength="10" required>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--make sure the for matches inputs id & name (almost always)-->
+                    <td>
+
+                        <label for="age">Age: </label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <input type="number" name="age" id="age" min="1" required>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--make sure the for matches inputs id & name (almost always)-->
+                    <td>
+
+                        <label for="comments">Comments: </label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <textarea id="comments" name="comments" rows="10" cols="20" placeholder="Leave Comment Here:" required></textarea>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--DROP DOWN SELECTION MENU-->
+                    <td>
+
+                        <label for="favecolor">Pick your <br>Favorite Color:</label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <select name="faveColor" id="faveColor">
+
+                            <!--User is restricted to only selecting ONE option-->
+                            <option value="r" style="color: red;">Red</option>
+                            <option value="o">Orange</option>
+                            <option value="y">Yellow</option>
+                            <option value="g">Green</option>
+                            <option value="b">Blue</option>
+                            <option value="i">Indigo</option>
+                            <option value="v">Violet</option>
+
+                        </select>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--RADIO BUTTONS (MULTIPLE CHOICE)-->
+                    <td>
+
+                        <label for="study">Program of Study:</label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <input type="radio" name="study" value="CYB">
+                        Cybersecurity & Network Engineering <br>
+
+                        <input type="radio" name="study" value="SE">
+                        Software Engineering <br>
+
+                        <input type="radio" name="study" value="WD">
+                        Web Development <br>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--CHECK BOXES-->
+                    <td>
+
+                        <label for="vehicle">Select your Vehicles:</label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <input type="checkbox" name="vehicle" value="car">Car<br>
+                        <input type="checkbox" name="vehicle" value="truck">Truck<br>
+                        <input type="checkbox" name="vehicle" value="colorfulHat">Colorful Spinny Propellor Hat<br>
+                        <input type="checkbox" name="vehicle" value="train">Train<br>
+                        <input type="checkbox" name="vehicle" value="falcon">Millenium Falcon<br>
+                        <input type="checkbox" name="vehicle" value="bantha">Bantha Ride<br>
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--Date-->
+                    <td>
+
+                        <label for="date">Date: </label>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <input type="date" name="date" id="date">
+
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--Submit-->
+                    <td>
+
+
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <input type="submit" value="SUBMIT">
+
+                    </td>
+
+                </tr>
+            </tbody>
+
+            <!--TABLE FOOT-->
+            <tfoot>
+
+            </tfoot>
+
+        </table>
+
+    </form>
+
+</body>
+</html>
