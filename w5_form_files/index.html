@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--The type of font we are using-->
+    <meta charset="UTF-8">
+    <!--Tells the -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Johnson">
+    <meta name="description" content="Default HTML Page for SE 111">
+    
+    <link type="text/css" rel="stylesheet" href="style.css">
+
+    <title>Week 5 | Tables and Forms</title>
+</head>
+<body>
+    <!--Build your Table and Form here-->
+    <h1>Birdthday Party Registration Form</h1>
+
+    <form method="GET" action="confirm.html">
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <!--LABEL-->
+                    <!--make sure the for matches inputs id & name (almost always)-->
+                    <td>
+
+                        <h2>Labels</h2>
+
+                    </td>
+
+                    <!--INPUT-->
+                    <td>
+
+                        <h2>Form Fields</h2>
+
+                    </td>
+
+                </tr>
+
+                <tbody>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="gfirst">Parent/Guardian Name: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="text" name="gfirst" maxlength="20" id="g-first" placeholder="First Name" required>
+                            
+                            <br>
+
+                            <input type="text" name="gfirst" maxlength="20" id="g-last" placeholder="Last Name" required>
+
+                        </td>
+
+                    </tr>
+                    
+                        
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="cfirst">Child's First Name: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="text" name="cfirst" maxlength="20" id="c-first" placeholder="Child's First Name" required>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="age">Child's Age: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="number" name="age" value="3" min="0" required>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <!--make sure the for matches inputs id & name (almost always)-->
+                        <td>
+    
+                            <h2>Date and Time</h2>
+    
+                        </td>
+    
+                        <!--INPUT-->
+                        <td>
+    
+                            <h2></h2>
+    
+                        </td>
+    
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="date">Date: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="date" name="date" required>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="time">State Time: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="time" name="time" required>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="guests">Number of Guests: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="number" name="guests" value="5">
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <!--make sure the for matches inputs id & name (almost always)-->
+                        <td>
+    
+                            <h2>Food</h2>
+    
+                        </td>
+    
+                        <!--INPUT-->
+                        <td>
+    
+                            <h2></h2>
+    
+                        </td>
+    
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="size">Drink Size: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="radio" name="size" value="sm">
+                            SM<br>
+
+                            <input type="radio" name="size" value="md">
+                            MED<br>
+
+                            <input type="radio" name="size" value="lg">
+                            LRG<br>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="drinks">Drinks: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="checkbox" name="drink1" checked="true" value="coke"><label for="drink1">Coke<label><br>
+
+
+                            <input type="checkbox" name="drink2" value="sprite"><label for="drink2">Sprite<label><br>
+
+                            <input type="checkbox" name="drink3" value="fruit punch"><label for="drink3">Fruit Punch<label><br>
+
+                            <input type="checkbox" name="drink4" value="lemonade"><label for="drink4">Lemonade<label><br>
+
+                            <input type="checkbox" name="drink5" value="iced tea"><label for="drink5">Iced Tea<label><br>
+
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="cake">Cake: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <select name="cake">
+
+                                <option>Chocolate</option>
+                                <option>Vanilla</option>
+                                <option>I'll bring my own</option>
+
+                            </select>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <!--make sure the for matches inputs id & name (almost always)-->
+                        <td>
+    
+                            <h2>Decorations</h2>
+    
+                        </td>
+    
+                        <!--INPUT-->
+                        <td>
+    
+                            <h2></h2>
+    
+                        </td>
+    
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="colors">Color Scheme: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <label for="colors">Choose a color scheme for the party</label><br><input type="color" name="colors">
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+
+                            <label for="comments">Comments: </label>
+
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="textarea" placeholder="Please add any additional comments here: " name="comments">
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <!--LABEL-->
+                        <td>
+                        </td>
+
+                        <!--INPUT-->
+                        <td>
+
+                            <!--MAXLENGTH = MAX AMOUNT OF LENGTH FOR INPUT-->
+                            <input type="submit" value="Submit">
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </thead>
+        </table>
+
+    </form>    
+</body>
+</html>
