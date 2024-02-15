@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Andrew Johnson">
+    <meta name="description" content="W6 JavaScript Pay Calculator">
+
+    <title>W6 | JavaScript Pay Calculator</title>
+
+</head>
+<body>
+
+<h1>W6 | JavaScript Pay Calculator</h1>
+<h3>Andrew Johnson, SE11.01</h3>
+
+    <script>
+
+       //Write JavaScript in here 
+    
+       var name //users name
+       var hourlyPay //users hourly pay
+       var hoursWorked //users hours worked over the past 2 weeks
+       var twoWeekGross //gross payout pre-tax from past 2 weeks
+       var taxPaid //total amount of tax paid on 2 week paycheck
+       var twoWeekPayout //total payout for 2 week paycheck post-tax
+
+       var name = prompt(`What is Your Name?: `)
+       console.log(`Name: ${name}`) //passed user's name
+
+       var hourlyPay = Number(prompt(`What is your Hourly Pay?: `))
+       console.log(`User's Hourly Pay: $${hourlyPay.toFixed(2)}`) //passed hourly pay
+
+       var hoursWorked = Number(prompt(`How many hours did you work over the past two weeks?: `))
+       console.log(`Users Hours Worked: ${hoursWorked.toFixed(1)}`) //passed hours worked
+
+       var twoWeekGross = hourlyPay * hoursWorked //finds gross pay pre-tax
+
+       var taxPaid = 0.20 * twoWeekGross //finds amount tax paid
+
+       var twoWeekPayout = twoWeekGross - taxPaid //finds total payout in end
+
+        console.log(`${name}, Your Payment Information: \n\nGross Pay: $${twoWeekGross.toFixed(2)}\nTotal Tax: $${taxPaid.toFixed(2)}\nNet Pay: $${twoWeekPayout.toFixed(2)}`) //displays all amounts in tax, payout, and gross pay
+
+       //END CALCULATIONS & INPUT
+
+    </script>
+</body>
+</html>
