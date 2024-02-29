@@ -191,22 +191,28 @@
             /* insert innerHTML in the #info div */
             info.innerHTML = `<p><b>First Name: </b>${firstValue}<br><b>Last Name: </b>${lastValue}<br><br><b>Gross Pay: </b>$${grossPay.toFixed(2)}<br><b>Tax Amount: </b>$${taxAmount.toFixed(2)}<br><b>Net Pay: </b>$${netPay.toFixed(2)}</p>`
 
-
-
-
-
-            //EXTRA CREDIT---------+5pts-------------------------------
-            /*
-                Once your file is working, add ONE INSTRUCTION above this comment, but inside of the formData(), that makes sure if the user resubmits the form without reloading the page, only the new form info is displayed
-            */
         }
 
 
-       function confirmData(event)
-       {
+       function confirmData(event) {
+
+            var firstValue = document.getElementById('first').value
+            var lastValue = document.getElementById('last').value
+            var fullName = 'First Name: ' + firstValue + ' ' + lastValue
+
+
+            /* vars * conversions */
+            var rate = Number(document.getElementById('rate').value)
+            var hours = Number(document.getElementById('hours').value)
+            var grossPay = (rate * hours)
+            var taxAmount = (grossPay * 0.20)
+            var netPay = (grossPay - taxAmount)
+
+            /* alert user */
+            alert(
+            `Full Name: ${fullName}\nGross Pay: $${grossPay.toFixed(2)}\nTax Amount: $${taxAmount.toFixed(2)}\nNet Pay: $${netPay.toFixed(2)}`)
 
        }//confirmData()
-
 
     </script>
     
