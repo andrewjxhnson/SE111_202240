@@ -68,6 +68,27 @@
 
         console.log(people[2].last) //show yara's last name using dot syntax
 
+
+        //to prompt user input
+        var num = Number(prompt("How many people would you like to add: "))
+
+        for (let i = 0; i < num; i++)
+        {
+            var f = prompt("First Name: ")
+            var l = prompt("Last Name: ")
+            var c = prompt("Credit: ")
+
+            var obj = {
+
+                first: f,
+                last: l,
+                credit: c
+            }
+
+            people.push(obj)
+            
+        }
+
         //use the array of objects to write all data stored to the HTML document page to be viewed in browser
 
         //each OBJECT'S info should be encased inside of a border (.red class)
