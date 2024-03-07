@@ -2,9 +2,15 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Week 2 Files</title>
+<meta name="author" content="A Johnson">
+<meta name="description" content="W9 Creating Elements">
+
+<title>Week 9 Creating Elements</title>
+
 <style type="text/css">
+
 	.border{border:1px solid black;}
+
 </style>
 </head>
 
@@ -22,6 +28,37 @@
 		{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
 		{first:"Marion", last:"Cobretti", credit:"Cobra" }
 	]
+
+	//slect main content element (body) to be able to add to it later
+	var body = document.querySelector(`body`)
+
+	for (let i = 0; i < people.length; i++)
+	{
+		//create div element for array object
+		var tempDiv = document.createElement(`div`)
+
+		//add the id and class to the new div element created above
+		tempDiv.setAttribute(`id`, people[i].first)
+		tempDiv.setAttribute(`class`, `border`)
+
+		//create loop --> for every property in the object
+		for(let key in people[i])
+		{
+			//create the paragraph element to hold text
+			var p = document.createElement(`p`)
+
+			//create text node to hold paragraph elements
+			var text = document.createTextNode(people[i][key])
+
+			//append the text top paragraph
+			p.appendChild(text)
+			tempDiv.appendChild(p)
+		}
+
+		//add new div to the body html
+		body.appendChild(tempDiv)
+
+	}
 	
 </script>
 
